@@ -1,0 +1,36 @@
+.inline {
+  display: inline;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.text-gray-200 {
+  color: #c7c7c7;
+}
+
+.animate-spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fill {
+  fill: #6469ff;
+}

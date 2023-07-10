@@ -1,0 +1,42 @@
+.formhead {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+.formlabel {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111827;
+  margin-top: 15px;
+}
+.formbtn {
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #ececf1;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: 16px 0 0 15px;
+  border-radius: 5px;
+  color: black;
+}
+.inputfield {
+  background-color: #f9f9f9;
+  border: 1px solid #cbd5e0;
+  color: #111827;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 0.375rem;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.inputfield:focus {
+  box-shadow: 0 0 0 3px #6469ff;
+  border-color: #6469ff;
+}

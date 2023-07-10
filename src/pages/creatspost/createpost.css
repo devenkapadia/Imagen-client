@@ -1,0 +1,104 @@
+.section {
+  max-width: 80rem; /* Adjust the value as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+.head {
+  font-weight: 800; /* or "extrabold" if the font supports it */
+  color: #222328;
+  font-size: 40px;
+}
+.title {
+  margin-top: 0.5rem;
+  color: #666e75;
+  font-size: 20px;
+  max-width: 500px;
+  white-space: nowrap;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.imgdiv {
+  position: relative;
+  margin-top: 20px;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  border-color: #3b82f6;
+  width: 16rem;
+  padding: 0.75rem;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.genimg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.altimg {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  opacity: 0.4;
+}
+.loaderdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.btndiv {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+}
+.genbtn {
+  color: rgb(0, 0, 0);
+  background-color: #34d399;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  /* width: 100%; */
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+}
+.downloadbtn {
+  color: rgb(0, 0, 0);
+  background-color: #3499d3;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  /* width: 100%; */
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+}
+
+.share {
+  margin: 0.5rem 0 0 0;
+  color: #666e75;
+  font-size: 14px;
+}
+
+.sharebtn {
+  margin-top: 0.75rem;
+  color: white;
+  background-color: #6469ff;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  /* width: 100%; */
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+}
