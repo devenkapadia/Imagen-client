@@ -3,6 +3,7 @@ import "./createpost.css"
 import { FormField, Loader } from '../../components'
 import { getRandomPrompt, downloadImage } from '../../utils'
 import { preview } from '../../assets'
+import notfound from '../../assets/notfound.png'
 
 
 const CreatePost = () => {
@@ -23,6 +24,7 @@ const CreatePost = () => {
         if (form.prompt) {
             try {
                 setGeneratingImg(true);
+                console.log("Set true")
                 const response = await fetch('http://localhost:8080/api/v1/output', {
                     method: 'POST',
                     headers: {
@@ -32,12 +34,13 @@ const CreatePost = () => {
                         prompt: form.prompt,
                     }),
                 });
-
                 const data = await response.json();
-                console.log(data)
+                // console.log(data)
                 setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` });
             } catch (err) {
-                alert(err);
+                setForm({ ...form, photo: notfound });
+                console.log("I am here")
+                // alert(err);
             } finally {
                 setGeneratingImg(false);
             }
@@ -48,7 +51,7 @@ const CreatePost = () => {
     const handleDownload = (e) => {
         downloadImage(form.photo)
     }
-    return (
+    return <div className='postcont'>
         <section className="section">
             <div>
                 <h1 className="head">Create Any Image</h1>
@@ -121,7 +124,7 @@ const CreatePost = () => {
                 </div> */}
             </form>
         </section>
-    )
+    </div>
 }
 
 export default CreatePost

@@ -1,8 +1,10 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+import './normal.css'
 import { logo } from './assets';
 import Home from './components/Home/Home';
 import CreatePost from './pages/creatspost/CreatePost';
+import Askq from './pages/askq/Askques';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/ask-qs" element={<Askq />} />
           <Route path="/create-post" element={<CreatePost />} />
         </Routes>
       </main>

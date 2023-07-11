@@ -1,0 +1,96 @@
+.askqcont {
+  display: flex;
+  background-color: grey;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.sidemenu {
+  width: 240px;
+  background-color: #e3f4f4;
+}
+.chats {
+  flex: 1;
+  background-color: #d2e9e9;
+  position: relative;
+}
+.newchat {
+  margin: 2px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+.newchat:hover {
+  cursor: pointer;
+  background-color: #c5f7f7;
+}
+.newchat span {
+  padding: 0 5px;
+}
+.chat-input-holder {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 10px;
+}
+.chat-input-text {
+  background-color: #c4dfdf;
+  width: 98%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  outline: none;
+}
+.chatlog {
+  padding: 15px;
+  text-align: left;
+}
+.chat-msg.chatgpt {
+  background-color: #9babb8;
+}
+.chat-msg-center {
+  max-width: 640px;
+  display: flex;
+  padding: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.avtar {
+  background-color: grey;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.avtar img {
+  height: 30px;
+  margin: 4.5px 0 0 5.5px;
+}
+.msg {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+.textform img {
+  width: 30px;
+  height: 30px;
+}
+.textform{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
